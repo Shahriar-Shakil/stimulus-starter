@@ -6,9 +6,50 @@
     <script src="bundle.js" async></script>
   </head>
   <body>
-    <div data-controller="hello">
+    <!-- <div data-controller="hello">
       <input data-hello-target="name" type="text" />
       <button data-action="click->hello#greet">Greet</button>
+    </div> -->
+    <!-- example 2 -->
+    <!-- <div
+      data-controller="clipboard"
+      data-clipboard-supported-class="clipboard--supported"
+    >
+      PIN:
+      <input data-clipboard-target="source" type="text" value="1234" readonly />
+
+      <button data-action="clipboard#copy" class="clipboard-button">
+        Copy to Clipboard
+      </button>
+    </div> -->
+    <!-- <div
+      data-controller="clipboard"
+      data-clipboard-supported-class="clipboard--supported"
+    >
+      PIN:
+      <input data-clipboard-target="source" type="text" value="3737" readonly />
+      <button data-action="clipboard#copy" class="clipboard-button">
+        Copy to Clipboard
+      </button>
+    </div> -->
+    <!-- <div
+      data-controller="clipboard"
+      data-clipboard-supported-class="clipboard--supported"
+    >
+      PIN:
+      <input data-clipboard-target="source" type="text" value="5678" readonly />
+      <a data-action="clipboard#copy" href="/" class="clipboard-button"
+        >Copy to Clipboard</a
+      >
+    </div> -->
+    <!-- example 3 state management -->
+    <div data-controller="slideshow" data-slideshow-index-value="2">
+      <button data-action="slideshow#prev">←</button>
+      <button data-action="slideshow#next">→</button>
+      <div data-slideshow-target="slide">🐵0</div>
+      <div data-slideshow-target="slide">🙈1</div>
+      <div data-slideshow-target="slide">🙉2</div>
+      <div data-slideshow-target="slide">🙊3</div>
     </div>
   </body>
 </html>
